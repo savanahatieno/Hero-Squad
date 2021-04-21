@@ -10,10 +10,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class squadTest {
 
     @Test
-    @DisplayName("Name should be added")
-    public void testString() {
+    @DisplayName("Squad Name should be added")
+    public void testString_SquadName() {
         squad newSquad = squad.setUpNewSquad1();
-        System.out.println(newSquad);
-        //assertEquals("Team Avatar", newSquad.getSquadName ());
+        assertEquals("Team Avatar", newSquad.getSquadName ());
+    }
+
+    @Test
+    @DisplayName("Squad Name should be added")
+    public void testInt_SquadQuantity() {
+        squad newSquad = squad.setUpNewSquad1();
+        assertEquals("1", newSquad.getSquadQuantity ());
     }
 }
