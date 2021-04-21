@@ -24,4 +24,27 @@ public class heroTest {
         assertEquals("Aang", newHero.getName ());
     }
 
+    @Test
+    @DisplayName("Age should be added")
+    public void testAge() {
+        hero newHero = hero.setUpNewHero();
+        assertEquals(30, newHero.getAge ());
+    }
+
+    @Test
+    @DisplayName("Name should be added")
+    public void testPower() {
+        hero newHero = hero.setUpNewHero();
+        assertEquals("Air Bender", newHero.getPower ());
+    }
+
+    @Test
+    @DisplayName("Name should be added")
+    public void testWeakness() {
+        hero newHero = hero.setUpNewHero();
+        assertEquals("Killing", newHero.getWeakness ());
+    }
+
+
+
 }
