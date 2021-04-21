@@ -1,6 +1,6 @@
 # Hero Squad
 
-# This is an app there the user is able to create a virtual squad and heroes of their choice.
+ This is an app there the user is able to create a virtual squad and heroes of their choice.
 
 ## Author
 * **Savanah Agutu** 
