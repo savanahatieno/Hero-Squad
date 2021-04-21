@@ -52,15 +52,27 @@ public class App {
             return new ModelAndView(new HashMap(), "hero_form.hbs");
         } , new HandlebarsTemplateEngine());
 
-
-
-
-
-
         //Squad Page
+        get("/squad_page", (request, response) ->{
+            return new ModelAndView(new HashMap(), "squad_page.hbs");
+        } , new HandlebarsTemplateEngine());
 
+        //Squad Form page
+
+        get("/squad_form", (request, response) ->{
+            return new ModelAndView(new HashMap(), "squad_form.hbs");
+        } , new HandlebarsTemplateEngine());
+
+
+
+
+
+
+//        Squad Page
+//
 //        get("/squad_page", (request, response) ->{
 //            ArrayList<squad> squad = models.squad.getInstances();
+//            JavaSecurityAccess.ProtectionDomainCache model;
 //            model.put("squad", squad);
 //            ArrayList<hero> members = hero.getInstances();
 //            model.put("hero", "members");
