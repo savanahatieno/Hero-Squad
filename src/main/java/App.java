@@ -1,3 +1,4 @@
+import jdk.internal.access.JavaSecurityAccess;
 import models.hero;
 import models.squad;
 import spark.ModelAndView;
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 import static spark.Spark.*;
 
@@ -56,15 +58,16 @@ public class App {
 
 
         //Squad Page
-        get("/squad_page", (request, response) ->{
-            ArrayList<squad> squad = models.squad.getInstances();
-            model.put("squad", squad);
-            ArrayList<hero> members = hero.getInstances();
-            model.put("hero", "members");
-            squad newSquad = squad.findBySquadId(1);
-            model.put("allSquadMembers", newSquad.getSquadMembers();
-            return new ModelAndView(new HashMap(), "squad_page.hbs");
-        } , new HandlebarsTemplateEngine());
+
+//        get("/squad_page", (request, response) ->{
+//            ArrayList<squad> squad = models.squad.getInstances();
+//            model.put("squad", squad);
+//            ArrayList<hero> members = hero.getInstances();
+//            model.put("hero", "members");
+//            squad newSquad = squad.findBySquadId(1);
+//            model.put("allSquadMembers", newSquad.getSquadMembers();
+//            return new ModelAndView(new HashMap(), "squad_page.hbs");
+//        } , new HandlebarsTemplateEngine());
 
 
 
@@ -87,15 +90,15 @@ public class App {
         //Post
 
 
-        post("/new/hero", ((request, response) -> {
-            String name = request.queryParams("name");
-            Integer age = Integer.parseInt(request.queryParams("age"));
-            String power = request.queryParams("power");
-            String weakness = request.queryParams("weakness");
-            request.session().attribute("item", name);
-            model.put("item",req.session().attribute("item"));
-            model.put("newHero",newHero);
-            return new ModelAndView(model, "success_page.hbs");
-        }, new HandlebarsTemplateEngine());
+//        post("/new/hero", ((request, response) -> {
+//            String name = request.queryParams("name");
+//            Integer age = Integer.parseInt(request.queryParams("age"));
+//            String power = request.queryParams("power");
+//            String weakness = request.queryParams("weakness");
+//            request.session().attribute("item", name);
+//            model.put("item",req.session().attribute("item"));
+//            model.put("newHero",newHero);
+//            return new ModelAndView(model, "success_page.hbs");
+//        }, new HandlebarsTemplateEngine());
     }
 }
