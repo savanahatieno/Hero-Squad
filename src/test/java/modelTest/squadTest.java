@@ -21,7 +21,7 @@ public class squadTest {
     @DisplayName("Squad Quantity should be added")
     public void testInt_SquadQuantity() {
         squad newSquad = squad.setUpNewSquad2();
-        assertEquals(4, newSquad.getSquadQuantity ());
+        assertEquals(6 newSquad.getSquadQuantity ());
     }
 
     @Test
