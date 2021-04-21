@@ -13,7 +13,7 @@ public class squad {
     private static ArrayList instances = new ArrayList();
 
 
-    public squad (String name, int quantity, String reason, String cause){
+    public squad (String name, int quantity, String reason){
         this.squadName = name;
         this.squadQuantity = quantity;
         this.squadReason = reason;
@@ -64,19 +64,19 @@ public class squad {
     //Setting new members
 
     public static squad setUpNewSquad1 (){
-        return  new squad("Team Avatar", 4,"Defeat the fire nation","Save people from being killed");
+        return  new squad("Team Avatar", 4,"Defeat the fire nation");
     }
 
     public static squad setUpNewSquad2 (){
-        return  new squad("Winter Soldier", 6,"Defeat the Super Soldiers","Hope for a new world");
+        return  new squad("Winter Soldier", 6,"Defeat the Super Soldiers");
     }
 
     public static squad setUpNewSquad3 (){
-        return  new squad("DareDevil", 2,"Save New York","Passion of being heroes");
+        return  new squad("DareDevil", 2,"Save New York");
     }
 
     public static squad setUpNewSquad4 (){
-        return  new squad("Infinity ", 12,"Defeat Aliens","Defeat Aliens");
+        return  new squad("Infinity ", 12,"Defeat Aliens");
     }
 
 

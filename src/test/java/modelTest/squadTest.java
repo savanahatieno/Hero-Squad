@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.DisplayName;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class squadTest {
 
@@ -17,9 +18,25 @@ public class squadTest {
     }
 
     @Test
-    @DisplayName("Squad Name should be added")
+    @DisplayName("Squad Quantity should be added")
     public void testInt_SquadQuantity() {
-        squad newSquad = squad.setUpNewSquad1();
+        squad newSquad = squad.setUpNewSquad2();
         assertEquals(4, newSquad.getSquadQuantity ());
+    }
+
+    @Test
+    @DisplayName("Squad Reason should be added")
+    public void testString_SquadReason() {
+        squad newSquad = squad.setUpNewSquad3();
+        assertEquals("Save New York", newSquad.getSquadReason ());
+    }
+
+    @Test
+    @DisplayName("NewSquad and able to add another")
+    public void newSquad_getInstances_true() {
+        squad newSquad = squad.setUpNewSquad1();
+        squad another = squad.setUpNewSquad1();
+        assertTrue(squad.getInstances().contains(newSquad));
+        assertTrue(squad.getInstances().contains(another));
     }
 }
