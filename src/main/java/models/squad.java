@@ -2,7 +2,6 @@ package models;
 
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class squad {
 
@@ -21,6 +20,22 @@ public class squad {
         this.squadMembers = new ArrayList();
         final boolean add = instances.add(this);
         this.squadId = instances.size();
+    }
+
+    public String getSquadName(){
+        return squadName;
+    }
+    public int getSquadQuantity(){
+        return squadQuantity;
+    }
+    public String getSquadReason(){
+        return squadReason;
+    }
+    public int getSquadId(){
+        return squadId;
+    }
+    public static Object findBySquadId (int id){
+        return instances.get(id -1);
     }
 
 }
