@@ -63,20 +63,20 @@ public class squad {
 
     //Setting new members
 
-    public static squad setUpNewSquad (){
-        return  new squad("Team Avatar", 4,"Defeat the fire nation","Save people from being killed")
+    public static squad setUpNewSquad1 (){
+        return  new squad("Team Avatar", 4,"Defeat the fire nation","Save people from being killed");
     }
 
-    public static squad setUpNewSquad (){
-        return  new squad("Winter Soldier", 6,"Defeat the Super Soldiers","Hope for a new world")
+    public static squad setUpNewSquad2 (){
+        return  new squad("Winter Soldier", 6,"Defeat the Super Soldiers","Hope for a new world");
     }
 
-    public static squad setUpNewSquad (){
-        return  new squad("DareDevil", 2,"Save New York","Passion of being heroes")
+    public static squad setUpNewSquad3 (){
+        return  new squad("DareDevil", 2,"Save New York","Passion of being heroes");
     }
 
-    public static squad setUpNewSquad (){
-        return  new squad("Infinity ", 12,"Defeat Aliens","Defeat Aliens")
+    public static squad setUpNewSquad4 (){
+        return  new squad("Infinity ", 12,"Defeat Aliens","Defeat Aliens");
     }
 
 
