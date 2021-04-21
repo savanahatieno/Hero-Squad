@@ -2,8 +2,15 @@
     <section class = "landing-page">
         <div class = "landing-left"></div>
         <div class = "landing-right"></div>
-        <form>
+        <form class = "form" action = "/new/hero" method = "post">
+            <h1>Create A Hero</h1>
+            <input type = "text" placeholder="Enter your Hero's Name" name="name" required>
+            <input type = "number" placeholder="Enter your Hero's Age" name="age" required>
+            <input type = "text" placeholder="Enter your Hero's Power" name="power" required>
+            <input type = "text" placeholder="Enter your Hero's Weakness" name="weakness" required>
 
+            <input class = "btns" type = "submit">
         </form>
     </section>
 {{/partial}}
+{{>nav.hbs}}
