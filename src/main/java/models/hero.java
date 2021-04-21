@@ -1,5 +1,7 @@
 package models;
 
+import org.graalvm.compiler.serviceprovider.IsolateUtil;
+
 import java.util.ArrayList;
 
 public class hero {
@@ -84,4 +86,6 @@ public class hero {
     public static hero setUpNewHero4(){
         return new hero ("Toph Beifong", 18, "Metal Bender","Emotions");
     }
+
 }
+
