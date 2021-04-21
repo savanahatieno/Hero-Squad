@@ -20,6 +20,6 @@ public class squadTest {
     @DisplayName("Squad Name should be added")
     public void testInt_SquadQuantity() {
         squad newSquad = squad.setUpNewSquad1();
-        assertEquals("1", newSquad.getSquadQuantity ());
+        assertEquals(4, newSquad.getSquadQuantity ());
     }
 }
