@@ -53,5 +53,15 @@ public class squad {
         squadMembers.add(newMember);
     }
 
+    //clearing all Members
+    public static void clearAllSquads(){
+        instances.clear();
+    }
+    public void clearAllSquadMembers(){
+        getSquadMembers().clear();
+    }
+
+
+
 
 }
