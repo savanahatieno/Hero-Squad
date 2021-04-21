@@ -38,4 +38,20 @@ public class squad {
         return instances.get(id -1);
     }
 
+    //ArrayLIst
+    public static ArrayList getInstances(){
+        return instances;
+    }
+
+    public ArrayList getSquadMembers(){
+        return squadMembers;
+    }
+
+    //Setter methods
+
+    public void setSquadMembers( hero newMember){
+        squadMembers.add(newMember);
+    }
+
+
 }
