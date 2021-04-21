@@ -12,7 +12,7 @@ public class hero {
     private int id;
     private static  ArrayList instances = new ArrayList();
 
-    public hero (String name, Integer age, String power, String weakness,){
+    public hero (String name, Integer age, String power, String weakness){
         this.name = name;
         this.age = age;
         this.power = power;
@@ -61,9 +61,9 @@ public class hero {
     }
 
     //Find Id
-    public static hero findById (int id){
-        return instances.get(int id);
-    }
+//    public static hero findById (int id){
+//        return instances.get(int -1);
+//    }
 
     //creating setter methods
 
