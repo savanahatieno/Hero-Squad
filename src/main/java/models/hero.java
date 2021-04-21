@@ -1,8 +1,6 @@
 package models;
 
 import java.util.ArrayList;
-import javax.swing.text.html.HTMLWriter;
-import java.lang.reflect.Array;
 
 public class hero {
     private String name;
@@ -20,6 +18,10 @@ public class hero {
         this.id = instances.size();
         instances.add(this);
     }
+
+//    public static hero setUpNewHero() {
+//        return null;
+//    }
 
     //Return
 
@@ -60,14 +62,26 @@ public class hero {
         return id;
     }
 
-    //Find Id
-//    public static hero findById (int id){
-//        return instances.get(int -1);
-//    }
+    public static Object findById (int id){
+        return instances.get(id-1);
+    }
+
 
     //creating setter methods
 
-    public static hero setUpNewHero(){
-        return new hero ("Aang", 30 , "Air Bender","Killing");
+    public static hero setUpNewHero1(){
+        return new hero ("Aang", 130 , "Air Bender","Killing");
+    }
+
+    public static hero setUpNewHero2(){
+        return new hero ("Katara", 24 , "Water Bender","Killing");
+    }
+
+    public static hero setUpNewHero3(){
+        return new hero ("Zuko", 26 , "Fire Bender","Love");
+    }
+
+    public static hero setUpNewHero4(){
+        return new hero ("Toph Beifong", 18, "Metal Bender","Emotions");
     }
 }
