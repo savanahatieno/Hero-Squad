@@ -1,9 +1,28 @@
 {{#partial "content"}}
     <section class = "landing-page">
-        <div class="land-left">
+        <div class="land-left"></div>
+        <div class="land-right"></div>
+        <h2><a class = "btns" href="hero_form.hbs">Create A Hero</a></h2>
+        <div class = "heroes">
+            {{#each}}
+               <div class = "hero-card">
+                   <img src="#" alt="">
+                   <p>Name: {{ name }}</p>
+                   <p>Age: {{ age }}</p>
+                   <p>Powers: {{ power }}</p>
+                   <p>Weakness: {{ weakness }}</p>
+                   <p>Id: {{ id }}</p>
+
+                   <a href="new/{{id}} class = "btns">More</a>
+                   <a href="/squad" class = "btns">Add {{ name }} to Squad</a>
+
+               </div>
+
+
+            {{/each}}
         </div>
-        <div class="land-right">
-        </div>
+
+
     </section>
 
 
