@@ -15,7 +15,12 @@ public class squad {
 
 
     public squad (String name, int quantity, String reason){
-
+        this.squadName = name;
+        this.squadQuantity = quantity;
+        this.squadReason = reason;
+        this.squadMembers = new ArrayList();
+        final boolean add = instances.add(this);
+        this.squadId = instances.size();
     }
 
 }
