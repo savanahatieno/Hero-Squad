@@ -64,4 +64,10 @@ public class hero {
     public static hero findById (int id){
         return instances.get(int id);
     }
+
+    //creating setter methods
+
+    public static hero setUpNewHero(){
+        return new hero ("Aang", 30 , "Air Bender","Killing");
+    }
 }
