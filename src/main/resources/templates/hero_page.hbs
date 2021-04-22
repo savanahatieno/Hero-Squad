@@ -1,37 +1,26 @@
 {{#partial "content"}}
-    <section class = "container">
-<!--        <div class="land-left"></div>-->
-<!--        <div class="land-right"></div>-->
-        <div class = "image-card">
-            <div class = "imgBx">
-                <img src="/public/images/hero1.jpg" alt="">
-            </div>
+    <head>
+        <link rel="stylesheet" href="/public/style.css">
+    </head>
+    <div class="container">
+        <div class = "card">
+          <div class = "imgBx">
+<!--              <img src="/public/images/hero1.jpg" alt="">-->
+          </div>
+          <div class = "content">
+              <h2>Card One</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur delectus eos ipsa natus quam quibusdam sequi similique, vel veritatis voluptatum? Ab alias consequuntur dicta error nemo pariatur placeat soluta suscipit!</p>
+          </div>
         </div>
-        <h2><a class = "btns" href="hero_form.hbs">Create A Hero</a> <br> Current Heroes</h2>
-
-<!--        <div class = "heroes">-->
-<!--            {{#each}}-->
-               <div class = "hero-card">
-                   <h1>Card One</h1>
-                   <img src="#" alt="">
-                   <p>Name: {{ name }}</p>
-                   <p>Age: {{ age }}</p>
-                   <p>Powers: {{ power }}</p>
-                   <p>Weakness: {{ weakness }}</p>
-                   <p>Id: {{ id }}</p>
-
-                   <a href="new/{{id}} class = "btns">More</a>
-                   <a href="/squad" class = "btns">Add {{ name }} to Squad</a>
-
-               </div>
-
-
-<!--            {{/each}}-->
-<!--        </div>-->
-
-
-    </section>
-
-
+    </div>
 {{/partial}}
-{{>nav.hbs}}
+{{> nav.hbs}}
+
+
+<!--<p>Name: {{ name }} </p>-->
+<!--<p>Age: {{ age }}</p>-->
+<!--<p>Special power: {{ power }}</p>-->
+<!--<p>Weakness: {{ weakness }}</p>-->
+<!--<p>Id: {{ id }}</p>-->
+<!--<a href="new/{{id}}" class="btns">Learn More</a>-->
+<!--<a href="/squad" class="btns">Add {{ name }} To Squad</a>-->
