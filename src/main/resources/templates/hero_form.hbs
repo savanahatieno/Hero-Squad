@@ -1,16 +1,36 @@
 {{#partial "content"}}
-    <section class = "landing-page">
-        <div class = "landing-left"></div>
-        <div class = "landing-right"></div>
-        <form class = "form" action = "/new/hero" method = "post">
-            <h1>Create A Hero</h1>
-            <input type = "text" placeholder="Enter your Hero's Name" name="name" required>
-            <input type = "number" placeholder="Enter your Hero's Age" name="age" required>
-            <input type = "text" placeholder="Enter your Hero's Power" name="power" required>
-            <input type = "text" placeholder="Enter your Hero's Weakness" name="weakness" required>
+    <section class = "split-screen">
+        <div class = "landing-left">
+            <section class = "copy ">
+                <h1 class = " hero1text">Explore your Creativity</h1>
 
-            <input class = "btns" type = "submit">
-        </form>
+            </section>
+        </div>
+        <div class = "landing-right">
+            <form class = "form" action = "/new/hero" method = "post">
+                <section class = "copy">
+                    <h2 class = " hero2text">Create A Hero</h2>
+                </section>
+                <div class = "input-container name">
+                    <label for="name">Hero's Name</label>
+                    <input type = "text" placeholder="Enter your Hero's Name" name="name" required>
+                </div>
+                <div class = "input-container age">
+                    <label for="age">Age </label>
+                    <input type = "number" placeholder="Enter your Hero's Age" name="age" required>
+                </div>
+                <div class = "input-container power">
+                    <label for="power">Power </label>
+                    <input type = "text" placeholder="Enter your Hero's Power" name="power" required>
+                </div>
+                <div class = "input-container weakness">
+                    <label for="weakness">Weakness </label>
+                    <input type = "text" placeholder="Enter your Hero's Weakness" name="weakness" required>
+                </div>
+                <button class ="join-btn" type="submit"><a href="/success">Submit</a></button>
+            </form>
+        </div>
+
     </section>
 {{/partial}}
 {{>nav.hbs}}
