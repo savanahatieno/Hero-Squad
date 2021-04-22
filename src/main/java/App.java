@@ -1,4 +1,4 @@
-import jdk.internal.access.JavaSecurityAccess;
+
 import models.hero;
 import models.squad;
 import spark.ModelAndView;
@@ -6,8 +6,7 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.imageio.ImageIO;
 
 
 import static spark.Spark.*;
@@ -15,6 +14,9 @@ import static spark.Spark.*;
 public class App {
 
     public static void main(String[] args) {
+        staticFileLocation("/public");
+        String main = "templates/main.hbs";
+
 
         ProcessBuilder process = new ProcessBuilder();
         Integer port;
@@ -68,18 +70,6 @@ public class App {
 
 
 
-//        Squad Page
-//
-//        get("/squad_page", (request, response) ->{
-//            ArrayList<squad> squad = models.squad.getInstances();
-//            JavaSecurityAccess.ProtectionDomainCache model;
-//            model.put("squad", squad);
-//            ArrayList<hero> members = hero.getInstances();
-//            model.put("hero", "members");
-//            squad newSquad = squad.findBySquadId(1);
-//            model.put("allSquadMembers", newSquad.getSquadMembers();
-//            return new ModelAndView(new HashMap(), "squad_page.hbs");
-//        } , new HandlebarsTemplateEngine());
 
 
 
