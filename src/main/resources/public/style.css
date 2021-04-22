@@ -163,5 +163,15 @@ label{
 
 
 /*M E D I A    S C R E E N*/
-
+@media  screen and (min-width: 900px) {
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .landing-left, .landing-right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
 
