@@ -1,0 +1,32 @@
+{{#partial "content"}}
+    <section class = "split-screen">
+        <div class = "landing-left">
+            <section class = "copy ">
+                <h1 class = " squad1text">We Are Strong Together </h1>
+
+            </section>
+        </div>
+        <div class = "landing-right">
+            <form class = "form" action = "/new/squad" method = "post">
+                <section class = "copy">
+                    <h2 class = " squad2text">Create A Squad</h2>
+                </section>
+                <div class = "input-container name">
+                    <label for="name">Squad Name</label>
+                    <input type = "text" placeholder="Enter your Squad's Name" name="name" required>
+                </div>
+                <div class = "input-container age">
+                    <label for="age">Squad Quantity </label>
+                    <input type = "number" placeholder="How many are you?" name="quanity" required>
+                </div>
+                <div class = "input-container power">
+                    <label for="power">Squad Reason </label>
+                    <input type = "text" placeholder="Reason to join" name="reason" required>
+                </div>
+                <a href="/success"><button  type="submit" class = "join-btn">Submit</button></a>
+            </form>
+        </div>
+
+    </section>
+{{/partial}}
+{{>nav.hbs}}
