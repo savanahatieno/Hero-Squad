@@ -96,3 +96,19 @@ a .hero-btn:hover{
     flex-direction: column;
 }
 
+.landing-left{
+    height: 200px;
+}
+.landing-left, .landing-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-left{
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.5)), url("images/landing-page.jpg");
+    background-size: cover;
+}
+.landing-left .copy{
+    color: ghostwhite;
+}
+
