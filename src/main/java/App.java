@@ -65,6 +65,11 @@ public class App {
             return new ModelAndView(new HashMap(), "squad_form.hbs");
         } , new HandlebarsTemplateEngine());
 
+        //Success Page
+
+        get("/success", (request, response) ->{
+            return new ModelAndView(new HashMap(), "success.hbs");
+        } , new HandlebarsTemplateEngine());
 
 
 
