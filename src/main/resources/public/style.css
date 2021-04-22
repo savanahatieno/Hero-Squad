@@ -110,5 +110,32 @@ a .hero-btn:hover{
 }
 .landing-left .copy{
     color: ghostwhite;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.landing-right .copy{
+    color: black;
+    text-align: center;
+}
+
+.landing-right form{
+    width: 328px;
+}
+form input[name="name"],
+form input[name="age"],
+form input[name="power"],
+form input[name="weakness"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
 }
 
