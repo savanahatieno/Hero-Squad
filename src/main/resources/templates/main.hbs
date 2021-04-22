@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{{#partial "content"}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <title>Hero Squad</title>
-</head>
-
-<body>
-<section id="content">
-    <div id="left">
-        <h1 class="web-title">HERO SQUAD</h1>
-        <p>“I will fight for those who cannot fight for themselves.”</p>
-    </div>
-
-</section>
-</body>
-
-</html>
+    <section class = "landing-page">
+        <div class = "landing-left"></div>
+        <div class = "landing-right"></div>
+        <div class = "hero-image"></div>
+        <div class = content>
+            <h4>You Ready To <br><span>Make Your Hero?!</span></h4>
+            <a href=""><button class = "hero-btn btns">Build Your Hero</button></a>
+        </div>
+    </section>
+{{/partial}}
+{{>nav.hbs}}
