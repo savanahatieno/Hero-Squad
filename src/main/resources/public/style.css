@@ -19,7 +19,7 @@
 }
 
 header{
-    position: relative;
+    position: sticky;
     top: 0;
     width: 100%;
     padding: 30px 100px;
@@ -65,7 +65,7 @@ header ul a :hover{
     font-weight: 600;
 }
 
-a .hero-btn{
+a .hero-btn {
     color: #fff;
     background: #226A80;
     text-decoration: none;
@@ -82,11 +82,11 @@ a .hero-btn:hover{
 }
 
 /*Hero_Form*/
-.hero1text{
+.hero1text, .squad1text{
     font-size: 2.25rem;
     font-weight: 700;
 }
-.hero2text{
+.hero2text, .squad2text{
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -122,6 +122,8 @@ a .hero-btn:hover{
 .landing-right form{
     width: 328px;
 }
+
+/*Hero Form*/
 form input[name="name"],
 form input[name="age"],
 form input[name="power"],
@@ -133,6 +135,20 @@ form input[name="weakness"]{
     border: 1px solid #c4c4c4;
     padding: 1em;
 }
+
+/*Squad Form*/
+form input[name="name"],
+form input[name="quanity"],
+form input[name="reason"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+}
+
+
 label{
     display: block;
     margin-bottom: 0.5rem;
@@ -142,7 +158,7 @@ label{
 
 }
 /*BUTTON UI*/
-.join-btn{
+a .join-btn{
     display: block;
     width: 100%;
     background-color: indigo;
@@ -155,10 +171,12 @@ label{
     text-transform: uppercase;
     letter-spacing: 0.5px;
 
+
 }
-.join-btn:hover{
+a .join-btn:hover{
     background:#2c4893;
     cursor: pointer;
+
 }
 
 
