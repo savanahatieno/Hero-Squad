@@ -6,7 +6,7 @@
 * **Savanah Agutu** 
 
 ## Live Page / Demo
-![screenshot-hero-squad](https://user-images.githubusercontent.com/62004236/115729189-df7a9100-a38d-11eb-8da1-44f8fd699492.png)
+![screenshot-hero-squad](https://user-images.githubusercontent.com/62004236/115730401-f077d200-a38e-11eb-9b39-cd0c5c1e73b3.png)
 
 ## Getting Started
  CLone the repository to your Local Machine to get started 
