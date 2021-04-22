@@ -194,7 +194,7 @@ a .join-btn:hover{
     align-items: center;
     display: grid;
     grid-gap: 1rem;
-    background: url("/images/marvel.jpg") ;
+    background: url("/images/marvel.jpg") no-repeat  ;
     /*background-size:cover ;*/
 
 }
