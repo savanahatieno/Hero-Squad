@@ -1,26 +1,43 @@
 {{#partial "content"}}
-    <head>
-        <link rel="stylesheet" href="/public/style.css">
-    </head>
-    <div class="container">
-        <div class = "card">
-          <div class = "imgBx">
-<!--              <img src="/public/images/hero1.jpg" alt="">-->
-          </div>
-          <div class = "content">
-              <h2>Card One</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur delectus eos ipsa natus quam quibusdam sequi similique, vel veritatis voluptatum? Ab alias consequuntur dicta error nemo pariatur placeat soluta suscipit!</p>
-          </div>
+    <div class="center">
+        <div class = "property-card">
+            <a href="#">
+                <div class="property-image">
+                    <div class="property-image-title">
+                          <h5>Card Title</h5>
+                    </div>
+                </div></a>
+            <div class = "property-description">
+                <h2 class = "card1text">Card One</h2>
+                <p>Name: {{ name }} </p>
+                <p>Age: {{ age }}</p>
+                <p>Special power: {{ power }}</p>
+                <p>Weakness: {{ weakness }}</p>
+                <p>Id: {{ id }}</p>
+                <a href="new/{{id}}" class="btns">Learn More</a>
+                <a href="/squad" class="btns">Add {{ name }} To Squad</a>
+            </div>
+        </div>
+        <div class = "property-card">
+            <a href="#">
+                <div class="property-image">
+                    <div class="property-image-title">
+                        <h5>Card Title</h5>
+                    </div>
+                </div></a>
+            <div class = "property-description">
+                <h2 class = "card1text">Card One</h2>
+                <p>Name: {{ name }} </p>
+                <p>Age: {{ age }}</p>
+                <p>Special power: {{ power }}</p>
+                <p>Weakness: {{ weakness }}</p>
+                <p>Id: {{ id }}</p>
+                <a href="new/{{id}}" class="btns">Learn More</a>
+                <a href="/squad" class="btns">Add {{ name }} To Squad</a>
+            </div>
         </div>
     </div>
 {{/partial}}
 {{> nav.hbs}}
 
 
-<!--<p>Name: {{ name }} </p>-->
-<!--<p>Age: {{ age }}</p>-->
-<!--<p>Special power: {{ power }}</p>-->
-<!--<p>Weakness: {{ weakness }}</p>-->
-<!--<p>Id: {{ id }}</p>-->
-<!--<a href="new/{{id}}" class="btns">Learn More</a>-->
-<!--<a href="/squad" class="btns">Add {{ name }} To Squad</a>-->

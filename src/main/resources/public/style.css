@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif ;
+    -webkit-box-sizing: border-box;
 }
 .landing-page{
     position: relative;
@@ -181,10 +182,118 @@ a .join-btn:hover{
 
 
 /*HERO PAGE */
-.imgBx{
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.5)), url("images/landing-page.jpg");
-    background-size: cover;
+/*.imgBx{*/
+/*    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.5)), url("images/hero-logo.jpg");*/
+/*    background-size: cover;*/
+/*}*/
+.center{
+    height:300vh;
+    width:100%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    background: url("/images/marvel.jpg") ;
+    /*background-size:cover ;*/
+
 }
+.property-card{
+    height:18em;
+    width:14em;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:grid;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    position:relative;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius:16px;
+    overflow:hidden;
+    -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+.property-image{
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image:url('/images/hero-logo.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.property-description{
+    background-color: #FAFAFC;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+}
+
+.property-card:hover .property-description{
+    height:0em;
+    padding:0px 1em;
+}
+.property-card:hover .property-image{
+    height:18em;
+}
+.property-card:hover{
+    background-color: white;
+}
+p
+{
+    font-size:12px;
+}
+/*.container{*/
+/*    position: relative;*/
+/*    width: 1100px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    padding: 30px;*/
+/*}*/
+/*.container .card{*/
+/*    position: relative;*/
+/*    max-width: 300px;*/
+/*    height: 420px;*/
+/*    background: #ffffff;*/
+/*    margin: 30px 10px;*/
+/*    padding: 20px 15px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    box-shadow: 0.5px 202px rgba(0,0,0,0.5);*/
+/*    transition: 0.3s ease-in-out;*/
+/*}*/
+/*.container .card:hover{*/
+/*    height: 420px;*/
+/*}*/
+/*.container .card .imgBx{*/
+/*    position: relative;*/
+/*    width: 260px;*/
+/*    height: 260px;*/
+/*    top: -60px;*/
+/*    left: 20px;*/
+/*    z-index: 1;*/
+/*    box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
+/*}*/
+/*.container .card .imgBx img {*/
+/*    max-width: 100%;*/
+/*    border-radius: 4px;*/
+/*}*/
 
 
 /*M E D I A    S C R E E N*/
