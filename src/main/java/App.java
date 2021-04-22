@@ -25,18 +25,6 @@ public class App {
         staticFileLocation("/public");
         String main = "templates/main.hbs";
 
-
-        ProcessBuilder process = new ProcessBuilder();
-        Integer port;
-
-        if (process.environment().get("PORT") != null) {
-            port = Integer.parseInt(process.environment().get("PORT"));
-        }else {
-            port = 4567;
-        }
-        port(port);
-
-        staticFileLocation("/public");
         hero.setUpNewHero1();
         hero.setUpNewHero1();
         squad.setUpNewSquad1();

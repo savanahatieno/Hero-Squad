@@ -1,0 +1,43 @@
+{{#partial "content"}}
+    <div class="center">
+        <div class = "property-card">
+            <a href="#">
+                <div class="property-image">
+                    <div class="property-image-title">
+                          <h5>Card Title</h5>
+                    </div>
+                </div></a>
+            <div class = "property-description">
+                <h2 class = "card1text">Card One</h2>
+                <p>Name: {{ name }} </p>
+                <p>Age: {{ age }}</p>
+                <p>Special power: {{ power }}</p>
+                <p>Weakness: {{ weakness }}</p>
+                <p>Id: {{ id }}</p>
+                <a href="new/{{id}}" class="btns">Learn More</a>
+                <a href="/squad" class="btns">Add {{ name }} To Squad</a>
+            </div>
+        </div>
+        <div class = "property-card">
+            <a href="#">
+                <div class="property-image">
+                    <div class="property-image-title">
+                        <h5>Card Title</h5>
+                    </div>
+                </div></a>
+            <div class = "property-description">
+                <h2 class = "card1text">Card One</h2>
+                <p>Name: {{ name }} </p>
+                <p>Age: {{ age }}</p>
+                <p>Special power: {{ power }}</p>
+                <p>Weakness: {{ weakness }}</p>
+                <p>Id: {{ id }}</p>
+                <a href="new/{{id}}" class="btns">Learn More</a>
+                <a href="/squad" class="btns">Add {{ name }} To Squad</a>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+{{> nav.hbs}}
+
+
