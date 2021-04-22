@@ -3,6 +3,7 @@ package models;
 import org.graalvm.compiler.serviceprovider.IsolateUtil;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class hero {
     private String name;
@@ -10,14 +11,14 @@ public class hero {
     private String power;
     private String weakness;
     private int id;
-    private static  ArrayList instances = new ArrayList();
+    private static List<hero> instances = new ArrayList<hero>();
 
     public hero (String name, Integer age, String power, String weakness){
         this.name = name;
         this.age = age;
         this.power = power;
         this.weakness = weakness;
-        this.id = instances.size();
+        id = instances.size();
         instances.add(this);
     }
 
@@ -28,7 +29,7 @@ public class hero {
     //Return
 
     public String getName(){
-        return this.name;
+        return name;
     }
      //Age
     public int getAge(){
@@ -46,11 +47,19 @@ public class hero {
         return this.weakness;
     }
 
+
     //getting all instances
 
-    public static ArrayList getInstances(){
+
+    public static List<hero> all() {
         return instances;
     }
+
+    public static void clear() {
+        instances.clear();
+    }
+
+
 
     //Clear heroes
 
@@ -64,8 +73,26 @@ public class hero {
         return id;
     }
 
-    public static Object findById (int id){
-        return instances.get(id-1);
+    public static hero find(int id) {
+        try {
+            return instances.get(id - 1);
+        } catch (IndexOutOfBoundsException exception) {
+            return null;
+        }
+    }
+
+    public static boolean findHeroByName(String name)
+    {
+        boolean isAvailable = false;
+        for (int i =0; i<instances.size(); i++)
+        {
+            if (name.equalsIgnoreCase(instances.get(i).name) )
+            {
+                isAvailable = true;
+            }
+        }
+
+        return isAvailable;
     }
 
 

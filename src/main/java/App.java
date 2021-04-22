@@ -7,7 +7,7 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 import java.util.ArrayList;
 import java.util.HashMap;
 import javax.imageio.ImageIO;
-
+import java.util.Map;
 
 import static spark.Spark.*;
 
@@ -49,6 +49,35 @@ public class App {
             return new ModelAndView(new HashMap(), "hero_page.hbs");
         } , new HandlebarsTemplateEngine());
 
+//        post("/heroes", (req, res) -> {
+//            Map<String, Object> model = new HashMap<>();
+//            squad squad = squad.find(Integer.parseInt(req.queryParams("squadId")));
+//            String name = req.queryParams("name");
+//            String age = req.queryParams("age");
+//            String power = req.queryParams("power");
+//            String weakness = req.queryParams("weakness");
+//
+//
+//            if (hero.findHeroByName(name.trim()))
+//            {
+//
+//                model.put("template", "templates/heroes-fail.vtl");
+//                model.put("squad",squad);
+//            }
+//            else
+//            {
+//                hero hero = new hero(name,Integer.parseInt(age),special_power,weakness);
+//                squad.getClass(hero);
+//                model.put("squad",squad);
+//                model.put("template", "templates/success.hbs");
+//            }
+//            return new HandlebarsTemplateEngine().render(
+//                    new ModelAndView(model, main )
+//            );
+//        });
+
+
+
         //Hero Form Page
         get("/hero_form", (request, response) ->{
             return new ModelAndView(new HashMap(), "hero_form.hbs");
@@ -58,6 +87,22 @@ public class App {
         get("/squad_page", (request, response) ->{
             return new ModelAndView(new HashMap(), "squad_page.hbs");
         } , new HandlebarsTemplateEngine());
+
+        post("/squad_page", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            String name = req.queryParams("name");
+            String size = req.queryParams("size");
+            String cause = req.queryParams("cause");
+            squad squad = new squad(Integer.parseInt(size),name,cause);
+            model.put("template", "templates/success.hbs");
+            return new HandlebarsTemplateEngine().render(
+                    new ModelAndView(model, main)
+            );
+        });
+
+
+
+
 
         //Squad Form page
 
